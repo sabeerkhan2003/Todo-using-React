@@ -1,0 +1,111 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .to-do-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  button.add-button {
+    width: 80px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.add-button:hover {
+    background-color: #218838;
+  }
+  
+  ol {
+    padding: 0;
+    list-style-type: decimal;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  li .text {
+    flex-grow: 1;
+  }
+  
+  button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button.delete-button {
+    background-color: #dc3545;
+  }
+  
+  button.delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive Styles */
+ @media screen and (max-width: 768px) {
+    .to-do-list {
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    input[type="text"] {
+      width: calc(100% - 90px);
+    }
+  
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    button {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  } 
+   
